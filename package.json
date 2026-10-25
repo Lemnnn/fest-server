@@ -1,0 +1,23 @@
+{
+  "name": "fest-server",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Convex backend for fest-next",
+  "scripts": {
+    "dev": "convex dev",
+    "deploy": "convex deploy",
+    "codegen": "convex codegen",
+    "typecheck": "tsc --noEmit -p convex",
+    "setup:auth": "node scripts/setup-auth.mjs"
+  },
+  "dependencies": {
+    "@auth/core": "0.41.3",
+    "@convex-dev/auth": "0.0.96",
+    "convex": "1.48.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5"
+  }
+}
