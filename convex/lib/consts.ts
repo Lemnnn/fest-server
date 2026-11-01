@@ -21,6 +21,7 @@ export const PLAN_KEYS = [
   "timelineSharedAt",
   "expenses",
   "startDismissed",
+  "looks",
 ] as const
 
 export type PlanKey = (typeof PLAN_KEYS)[number]
